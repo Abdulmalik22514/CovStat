@@ -1,0 +1,12 @@
+{
+  "name": "CovStat",
+  "displayName": "CovStat",
+  "expo": {
+    "name": "CovStat",
+    "slug": "CovStat",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
