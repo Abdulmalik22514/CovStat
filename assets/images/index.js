@@ -1,0 +1,10 @@
+export const Fever = require("./Fever.png");
+export const Cough = require("./Cough.png");
+export const Breathing = require("./BreathingDifficulty.png");
+export const China = require("./China.png");
+export const Spain = require("./Spain.png");
+export const Germnany = require("./Germany.png");
+export const Iran = require("./Iran.png");
+export const Italy = require("./Italy.png");
+export const USA = require("./USA.png");
+// export const Germnay = require("./Cough.png");
