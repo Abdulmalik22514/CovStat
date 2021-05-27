@@ -56,6 +56,15 @@ export const TopCountries = ({ country, flag, icon, number }) => {
   );
 };
 
+export const Cases = ({ amount, reported, isRed, style, noMargBottom }) => {
+  return (
+    <View style={[styles.casesCont, noMargBottom && styles.noBottom]}>
+      <Text style={[styles.cases, isRed && styles.Red, style]}>{amount}</Text>
+      <Text style={styles.reported}>{reported}</Text>
+    </View>
+  );
+};
+
 const styles = StyleSheet.create({
   countryCont: {
     flexDirection: "row",
@@ -68,6 +77,26 @@ const styles = StyleSheet.create({
     marginTop: 20,
     paddingHorizontal: 15,
     height: 80,
+  },
+  noBottom: {
+    marginBottom: 5,
+  },
+  casesCont: {
+    marginTop: 15,
+    marginBottom: 15,
+  },
+  reported: {
+    fontSize: 17,
+    color: "#999999",
+  },
+  Red: {
+    color: "#FF647C",
+  },
+  cases: {
+    fontSize: 28,
+    fontWeight: "600",
+    color: "#00C48C",
+    marginBottom: 5,
   },
   amount: {
     color: "#151522",

@@ -1,12 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { LeftIcon } from "../assets/svg";
 
-export const Header = ({ icon, title, noIcon }) => {
+export const Header = ({ icon, title, noIcon, leftIcon }) => {
   return (
     <View style={styles.container}>
-      {noIcon ? <View /> : icon}
+      <TouchableOpacity>{leftIcon ? <LeftIcon /> : <View />}</TouchableOpacity>
+
       <Text style={styles.title}>{title}</Text>
-      {icon}
+      <TouchableOpacity>{icon}</TouchableOpacity>
     </View>
   );
 };

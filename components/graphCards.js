@@ -81,9 +81,51 @@ export const Affected = ({ amount, title, style, diffDot, diffColor }) => {
   );
 };
 
+export const AffectedRate = ({ title, isPink }) => {
+  return (
+    <View style={styles.moreAffected}>
+      <View style={[styles.more, isPink && styles.pink]} />
+      <Text style={{ color: "#999999", fontSize: 13 }}>{title}</Text>
+    </View>
+  );
+};
+
+export const AffectedDeath = ({ title, isPink }) => {
+  return (
+    <View style={styles.moreAffected}>
+      <View style={[styles.more1, isPink && styles.green]} />
+      <Text style={{ color: "#151522", fontSize: 12 }}>{title}</Text>
+    </View>
+  );
+};
+
 const styles = StyleSheet.create({
   textColor: {
     color: "#151522",
+  },
+  pink: {
+    backgroundColor: "#FF98A8",
+  },
+  green: {
+    backgroundColor: "#00C48C",
+  },
+  moreAffected: {
+    flexDirection: "row",
+    alignItems: "center",
+    // justifyContent: "space-between",
+  },
+  more1: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: "#FF647C",
+    marginRight: 5,
+  },
+  more: {
+    width: 11,
+    height: 11,
+    backgroundColor: "#FF647C",
+    marginRight: 12,
   },
   caseType: {
     fontSize: 11,
