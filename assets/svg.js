@@ -253,3 +253,81 @@ export const UpArrow = () => {
     </Svg>
   );
 };
+
+export const Plus = () => {
+  return (
+    <Svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+      <Path
+        d="M4.40021 8.48605L12.4002 8.48605M8.40021 12.4861L8.40021 4.48605"
+        stroke="#999999"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Minus = () => {
+  return (
+    <Svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+      <Path
+        d="M4.40021 8.48605H12.4002"
+        stroke="#999999"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Bell = (props) => {
+  return (
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none" {...props}>
+      <Path
+        d="M14 5.28738C12.1435 5.28738 10.363 6.02488 9.05025 7.33764C7.7375 8.65039 7 10.4309 7 12.2874V17.2874C7 18.083 6.68393 18.8461 6.12132 19.4087C5.55871 19.9713 4.79565 20.2874 4 20.2874H24C23.2044 20.2874 22.4413 19.9713 21.8787 19.4087C21.3161 18.8461 21 18.083 21 17.2874V12.2874C21 10.4309 20.2625 8.65039 18.9497 7.33764C17.637 6.02488 15.8565 5.28738 14 5.28738ZM14 5.28738V2.28738M15.73 24.2874C15.5542 24.5905 15.3018 24.842 14.9982 25.0169C14.6946 25.1918 14.3504 25.2838 14 25.2838C13.6496 25.2838 13.3054 25.1918 13.0018 25.0169C12.6982 24.842 12.4458 24.5905 12.27 24.2874"
+        stroke="#FF647C"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Home = () => {
+  return (
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none">
+      <Path
+        d="M11 24.4556V14.4556H17V24.4556M5 11.4556L14 4.45557L23 11.4556V22.4556C23 22.986 22.7893 23.4947 22.4142 23.8698C22.0391 24.2449 21.5304 24.4556 21 24.4556H7C6.46957 24.4556 5.96086 24.2449 5.58579 23.8698C5.21071 23.4947 5 22.986 5 22.4556V11.4556Z"
+        stroke="#999999"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Map = () => {
+  return (
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none">
+      <Path
+        d="M10 20.4556L3 24.4556V8.45557L10 4.45557M10 20.4556L18 24.4556M10 20.4556V4.45557M18 24.4556L25 20.4556V4.45557L18 8.45557M18 24.4556V8.45557M18 8.45557L10 4.45557"
+        stroke="#151522"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const LeftIcon = () => {
+  return (
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none">
+      <Path
+        d="M17 20.1428L11 14.1428L17 8.14282"
+        stroke="#999999"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
