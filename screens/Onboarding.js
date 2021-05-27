@@ -61,7 +61,7 @@ export default function Onboarding({ navigation }) {
         data={slides}
         dotStyle={{ backgroundColor: "grey" }}
         activeDotStyle={{ backgroundColor: "red" }}
-        onDone={() => navigation.navigate("covid19")}
+        onDone={() => navigation.navigate("Home")}
         renderDoneButton={_renderDoneButton}
         renderNextButton={_renderNextButton}
         renderSkipButton={_renderSkipButton}
@@ -74,7 +74,7 @@ export default function Onboarding({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 35,
+    paddingTop: 40,
     paddingHorizontal: 10,
   },
   slide: {
