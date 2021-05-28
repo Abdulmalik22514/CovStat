@@ -4,5 +4,5 @@ import Navigator from "./navigation";
 import MyTabs from "./tabNav";
 
 export default function App() {
-  return <MyTabs />;
+  return <Navigator />;
 }
