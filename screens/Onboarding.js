@@ -61,7 +61,7 @@ export default function Onboarding({ navigation }) {
         data={slides}
         dotStyle={{ backgroundColor: "grey" }}
         activeDotStyle={{ backgroundColor: "red" }}
-        onDone={() => navigation.navigate("Home")}
+        onDone={() => navigation.navigate("mytabs")}
         renderDoneButton={_renderDoneButton}
         renderNextButton={_renderNextButton}
         renderSkipButton={_renderSkipButton}
