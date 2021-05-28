@@ -293,12 +293,12 @@ export const Bell = (props) => {
   );
 };
 
-export const Home = () => {
+export const Home = (props) => {
   return (
-    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none">
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none" {...props}>
       <Path
         d="M11 24.4556V14.4556H17V24.4556M5 11.4556L14 4.45557L23 11.4556V22.4556C23 22.986 22.7893 23.4947 22.4142 23.8698C22.0391 24.2449 21.5304 24.4556 21 24.4556H7C6.46957 24.4556 5.96086 24.2449 5.58579 23.8698C5.21071 23.4947 5 22.986 5 22.4556V11.4556Z"
-        stroke="#999999"
+        stroke={props.color || "#999999"}
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -306,12 +306,12 @@ export const Home = () => {
   );
 };
 
-export const Map = () => {
+export const Map = (props) => {
   return (
-    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none">
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none" {...props}>
       <Path
         d="M10 20.4556L3 24.4556V8.45557L10 4.45557M10 20.4556L18 24.4556M10 20.4556V4.45557M18 24.4556L25 20.4556V4.45557L18 8.45557M18 24.4556V8.45557M18 8.45557L10 4.45557"
-        stroke="#151522"
+        stroke={props.color || "#151522"}
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -330,4 +330,15 @@ export const LeftIcon = () => {
       />
     </Svg>
   );
+};
+
+export const Education = (props) => {
+  <Svg width="28" height="29" viewBox="0 0 28 29" fill="none" {...props}>
+    <Path
+      d="M22 23.4556V21.4556C22 20.3947 21.5786 19.3773 20.8284 18.6271C20.0783 17.877 19.0609 17.4556 18 17.4556H10C8.93913 17.4556 7.92172 17.877 7.17157 18.6271C6.42143 19.3773 6 20.3947 6 21.4556V23.4556M18 9.45557C18 11.6647 16.2091 13.4556 14 13.4556C11.7909 13.4556 10 11.6647 10 9.45557C10 7.24643 11.7909 5.45557 14 5.45557C16.2091 5.45557 18 7.24643 18 9.45557Z"
+      stroke="#999999"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </Svg>;
 };
