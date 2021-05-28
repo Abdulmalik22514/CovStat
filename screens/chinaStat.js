@@ -15,11 +15,16 @@ import { Cases } from "../components/flags";
 import { AffectedDeath } from "../components/graphCards";
 import { Months, MonthYear } from "../components/months";
 
-export default function ChinaStat() {
+export default function ChinaStat({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar style={"dark"} />
-      <Header title="China - statistic" icon={<ProfileIcon />} leftIcon />
+      <Header
+        title="China - statistic"
+        icon={<ProfileIcon />}
+        leftIcon
+        onPress={() => navigation.pop()}
+      />
       <View style={styles.divider} />
       <View style={styles.contentContainer}>
         <View style={styles.contBox}>

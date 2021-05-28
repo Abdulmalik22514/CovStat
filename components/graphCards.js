@@ -43,17 +43,17 @@ export const GraphCard = ({ icon, title, record, graph }) => {
     }
   };
 
-  // const getNumColor = (title) => {
-  //   switch (title) {
-  //     case "Recorded":
-  //       return "green";
-  //     case "Total Death":
-  //       return "red";
+  const getNumColor = () => {
+    switch (title) {
+      case "Recorded":
+        return "green";
+      case "Total Death":
+        return "red";
 
-  //     default:
-  //       return "black";
-  //   }
-  // };
+      default:
+        return "black";
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -61,7 +61,7 @@ export const GraphCard = ({ icon, title, record, graph }) => {
         <Text style={styles.title}>{title}</Text>
         <RedArrow color={getIconColor()} />
       </View>
-      <Text style={styles.record}>{record}</Text>
+      <Text style={[styles.record, { color: getNumColor() }]}>{record}</Text>
       {graph}
     </View>
   );

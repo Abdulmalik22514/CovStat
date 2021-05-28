@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import * as Images from "../assets/images";
 import { Bell } from "../assets/svg";
 
@@ -27,7 +27,13 @@ export const CountryPercent = [
   },
 ];
 
-export const GraphPies = ({ percent, contName, affected, recovered }) => {
+export const GraphPies = ({
+  percent,
+  contName,
+  affected,
+  recovered,
+  onPress,
+}) => {
   return (
     <View style={styles.graphPies}>
       <Image source={percent} style={styles.pie1} />
@@ -36,7 +42,9 @@ export const GraphPies = ({ percent, contName, affected, recovered }) => {
         <Text style={styles.affected}>{affected}</Text>
         <Text style={styles.affected}>{recovered}</Text>
       </View>
-      <Bell />
+      <TouchableOpacity onPress={onPress}>
+        <Bell />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -58,7 +66,8 @@ const styles = StyleSheet.create({
   },
   pieView: {
     marginLeft: 15,
-    marginRight: 100,
+    marginRight: 85,
+    width: 130,
   },
   graphPies: {
     flexDirection: "row",
