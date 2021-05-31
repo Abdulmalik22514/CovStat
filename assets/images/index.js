@@ -13,3 +13,7 @@ export const GraphPie3 = require("./GraphPie3.png");
 export const GraphPie2 = require("./GraphPie2.png");
 export const StackedAreas = require("./StackedAreas.png");
 export const ChartLabels = require("./ChartLabels.png");
+export const WashHand = require("./WashHand.png");
+export const SocialDistancing = require("./SocialDistancing.png");
+export const FaceMask = require("./FaceMask.png");
+export const AvoidTouch = require("./AvoidTouch.png");
