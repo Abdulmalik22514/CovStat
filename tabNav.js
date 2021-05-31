@@ -1,11 +1,11 @@
 import * as React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
-import WorldMap from "./screens/map";
-import Covid19 from "./screens/home";
-import { Home, Map } from "./assets/svg";
-import Education from "./screens/education";
-import ChinaStat from "./screens/chinaStat";
+import WorldMap from "./src/screens/map";
+import Covid19 from "./src/screens/home";
+import { Home, Map, Education } from "./assets/svg";
+import Educate from "./src/screens/education";
+import ChinaStat from "./src/screens/chinaStat";
 
 const Tab = createBottomTabNavigator();
 const MapStack = createStackNavigator();
@@ -28,6 +28,8 @@ export default function MyTabs() {
             return <Home color={focused ? "#FF647C" : "#999999"} />;
           } else if (route.name === "Map") {
             return <Map color={focused ? "#FF647C" : "#999999"} />;
+          } else if (route.name === "Education") {
+            return <Education color={focused ? "#FF647C" : "#999999"} />;
           }
         },
       })}
@@ -38,7 +40,7 @@ export default function MyTabs() {
     >
       <Tab.Screen name="Home" component={Covid19} />
       <Tab.Screen name="Map" component={MapStackScreen} />
-      <Tab.Screen name="Education" component={Education} />
+      <Tab.Screen name="Education" component={Educate} />
     </Tab.Navigator>
   );
 }
