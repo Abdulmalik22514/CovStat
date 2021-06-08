@@ -1,5 +1,5 @@
 import React from "react";
-import Svg, { Path } from "react-native-svg";
+import Svg, { Defs, G, LinearGradient, Path, Stop } from "react-native-svg";
 
 export const ProfileIcon = () => {
   return (
@@ -354,6 +354,240 @@ export const SeeMore = () => {
         stroke-linecap="round"
         stroke-linejoin="round"
       />
+    </Svg>
+  );
+};
+
+export const Location = (props) => {
+  return (
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none" {...props}>
+      <Path
+        d="M4 13.1428L23 4.14282L14 23.1428L12 15.1428L4 13.1428Z"
+        stroke={props.color || "#999999"}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Discovery = (props) => {
+  return (
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none" {...props}>
+      <Path
+        d="M23 12.4556C23 19.4556 14 25.4556 14 25.4556C14 25.4556 5 19.4556 5 12.4556C5 10.0686 5.94821 7.77943 7.63604 6.09161C9.32387 4.40378 11.6131 3.45557 14 3.45557C16.3869 3.45557 18.6761 4.40378 20.364 6.09161C22.0518 7.77943 23 10.0686 23 12.4556Z"
+        stroke={props.color || "#999999"}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <Path
+        d="M14 15.4556C15.6569 15.4556 17 14.1124 17 12.4556C17 10.7987 15.6569 9.45557 14 9.45557C12.3431 9.45557 11 10.7987 11 12.4556C11 14.1124 12.3431 15.4556 14 15.4556Z"
+        stroke={props.color || "#999999"}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Book = (props) => {
+  return (
+    <Svg width="28" height="29" viewBox="0 0 28 29" fill="none" {...props}>
+      <Path
+        d="M14 9.45557C14 8.3947 13.5786 7.37728 12.8284 6.62714C12.0783 5.87699 11.0609 5.45557 10 5.45557H4V20.4556H11C11.7956 20.4556 12.5587 20.7716 13.1213 21.3342C13.6839 21.8969 14 22.6599 14 23.4556M14 9.45557V23.4556M14 9.45557C14 8.3947 14.4214 7.37728 15.1716 6.62714C15.9217 5.87699 16.9391 5.45557 18 5.45557H24V20.4556H17C16.2044 20.4556 15.4413 20.7716 14.8787 21.3342C14.3161 21.8969 14 22.6599 14 23.4556"
+        stroke={props.color || "#999999"}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Cold = (props) => {
+  return (
+    <Svg
+      width={props.width || "16"}
+      height={props.height || "24"}
+      viewBox="0 0 16 24"
+      fill="none"
+      {...props}
+    >
+      <Path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8.10319 23.7947C12.2044 23.7947 15.5291 20.4137 15.5291 16.2431C15.5291 14.2558 14.2547 11.9618 12.7369 9.22978C11.4018 6.82669 9.87847 4.08467 8.86849 0.914328C8.67799 0.316361 7.69712 0.298469 7.49003 0.890705C6.40768 3.98608 4.90654 6.661 3.58876 9.0092C1.99969 11.8408 0.677246 14.1973 0.677246 16.2431C0.677246 20.4137 4.00195 23.7947 8.10319 23.7947ZM3.70481 13.8494C3.66281 13.5923 3.33565 13.526 3.21987 13.7586C0.790524 18.6388 5.22083 23.0433 9.68468 21.5375C9.92649 21.4559 9.90596 21.1235 9.66243 21.0474C5.62177 19.7843 4.518 18.8295 3.70481 13.8494Z"
+        fill={props.color || "#FFCF5C"}
+      />
+      <Defs>
+        <LinearGradient
+          id="paint0_linear"
+          x1="8.10319"
+          y1="-11.2133"
+          x2="-13.0389"
+          y2="2.24078"
+          gradientUnits="userSpaceOnUse"
+        >
+          <Stop stop-color="#FFEFC9" />
+          <Stop offset="1" stop-color="#FFCF5C" />
+        </LinearGradient>
+      </Defs>
+    </Svg>
+  );
+};
+
+export const Flu = (props) => {
+  return (
+    <Svg
+      width={props.width || "26"}
+      height={props.height || "28"}
+      viewBox="0 0 26 28"
+      fill="none"
+      {...props}
+    >
+      <Path
+        d="M13.3655 0.849854L13.7187 2.30067C14.4027 5.11051 17.8067 6.21533 20.0105 4.34276L21.1407 3.3824L20.5697 4.77903C19.477 7.45199 21.5781 10.3408 24.4577 10.1245L25.9461 10.0127L24.6638 10.8071C22.2111 12.3265 22.2111 15.8945 24.6638 17.4138L25.9461 18.2082L24.4577 18.0964C21.5781 17.8801 19.477 20.7689 20.5697 23.4419L21.1407 24.8385L20.0105 23.8782C17.8067 22.0056 14.4027 23.1104 13.7187 25.9202L13.3655 27.3711L13.0123 25.9202C12.3283 23.1104 8.92423 22.0056 6.72047 23.8782L5.59026 24.8385L6.16124 23.4419C7.25401 20.7689 5.15285 17.8801 2.27324 18.0964L0.784912 18.2082L2.06721 17.4138C4.51985 15.8945 4.51985 12.3265 2.06721 10.8071L0.784912 10.0127L2.27324 10.1245C5.15285 10.3408 7.25401 7.452 6.16124 4.77903L5.59026 3.3824L6.72047 4.34276C8.92423 6.21532 12.3283 5.11051 13.0123 2.30067L13.3655 0.849854Z"
+        fill={props.color || "#FFCF5C"}
+      />
+      <Defs>
+        <LinearGradient
+          id="paint0_linear"
+          x1="13.3655"
+          y1="-12.4108"
+          x2="-13.119"
+          y2="12.7156"
+          gradientUnits="userSpaceOnUse"
+        >
+          <Stop stop-color="#FFEFC9" />
+          <Stop offset="1" stop-color="#FFCF5C" />
+        </LinearGradient>
+      </Defs>
+    </Svg>
+  );
+};
+
+export const Crown = (props) => {
+  return (
+    <Svg
+      width={props.width || "28"}
+      height={props.height || "23"}
+      viewBox="0 0 28 23"
+      fill="none"
+      {...props}
+    >
+      <Path
+        d="M0.526367 5.49755L4.21074 10.0024C5.13034 11.1268 6.95206 10.4385 6.89832 8.98693L6.64665 2.18929L8.82767 6.23975C9.83203 8.10499 12.6169 7.70355 13.0536 5.63058L14.127 0.535156L15.2004 5.63058C15.637 7.70355 18.4219 8.10499 19.4263 6.23975L21.6073 2.18929L21.3557 8.98693C21.3019 10.4385 23.1236 11.1268 24.0432 10.0024L27.7276 5.49755L23.5428 20.9361C23.5428 20.9361 20.2473 22.6547 14.127 22.6547C8.00671 22.6547 4.71117 20.9361 4.71117 20.9361L0.526367 5.49755Z"
+        fill={props.color || "#FFCF5C"}
+      />
+      <Defs>
+        <LinearGradient
+          id="paint0_linear"
+          x1="14.127"
+          y1="-10.5246"
+          x2="-7.52783"
+          y2="16.1052"
+          gradientUnits="userSpaceOnUse"
+        >
+          <Stop stop-color="#FFEFC9" />
+          <Stop offset="1" stop-color="#FFCF5C" />
+        </LinearGradient>
+      </Defs>
+    </Svg>
+  );
+};
+
+export const Tick = (props) => {
+  return (
+    <Svg width="16" height="17" viewBox="0 0 16 17" fill="none" {...props}>
+      <Path
+        d="M12.5713 4.61441L6.28561 10.9001L3.42847 8.04298"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const CheckCircle = (props) => {
+  return (
+    <Svg width="161" height="161" viewBox="0 0 161 161" fill="none" {...props}>
+      <Path
+        d="M137.647 74.8825V80.1397C137.64 92.4621 133.649 104.452 126.271 114.322C118.893 124.191 108.522 131.411 96.7057 134.905C84.889 138.399 72.2595 137.979 60.7007 133.709C49.1419 129.438 39.2732 121.546 32.5663 111.209C25.8595 100.871 22.6739 88.6429 23.4847 76.3472C24.2955 64.0515 29.0592 52.3473 37.0653 42.9801C45.0714 33.6129 55.891 27.0847 67.9105 24.3691C79.9299 21.6534 92.5052 22.8959 103.761 27.9111M137.647 34.4255L80.5037 91.6255L63.3608 74.4826"
+        stroke="#00C48C"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const Menu = (props) => {
+  return (
+    <Svg width="29" height="29" viewBox="0 0 29 29" fill="none" {...props}>
+      <Path
+        d="M5.92871 14.2498H23.9287M5.92871 8.24976H23.9287M5.92871 20.2498H23.9287"
+        stroke="#999999"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const DropDown = (props) => {
+  return (
+    <Svg width="14" height="8" viewBox="0 0 14 8" fill="none" {...props}>
+      <Path
+        d="M1.24219 1.45044L7.24219 7.45044L13.2422 1.45044"
+        stroke="#151522"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const MapPin = (props) => {
+  return (
+    <Svg width="29" height="29" viewBox="0 0 29 29" fill="none" {...props}>
+      <Path
+        d="M23.6689 12.3667C23.6689 19.3667 14.6689 25.3667 14.6689 25.3667C14.6689 25.3667 5.66895 19.3667 5.66895 12.3667C5.66895 9.97975 6.61716 7.69057 8.30498 6.00274C9.99281 4.31491 12.282 3.3667 14.6689 3.3667C17.0559 3.3667 19.3451 4.31491 21.0329 6.00274C22.7207 7.69057 23.6689 9.97975 23.6689 12.3667Z"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <Path
+        d="M14.6689 15.3667C16.3258 15.3667 17.6689 14.0236 17.6689 12.3667C17.6689 10.7098 16.3258 9.3667 14.6689 9.3667C13.0121 9.3667 11.6689 10.7098 11.6689 12.3667C11.6689 14.0236 13.0121 15.3667 14.6689 15.3667Z"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </Svg>
+  );
+};
+
+export const PlayCircle = (props) => {
+  return (
+    <Svg width="51" height="51" viewBox="0 0 51 51" fill="none" {...props}>
+      <G opacity="0.5">
+        <Path
+          d="M25.549 43.464C35.4113 43.464 43.4062 35.4691 43.4062 25.6069C43.4062 15.7447 35.4113 7.74976 25.549 7.74976C15.6868 7.74976 7.69189 15.7447 7.69189 25.6069C7.69189 35.4691 15.6868 43.464 25.549 43.464Z"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <Path
+          d="M21.9776 18.464L32.6919 25.6069L21.9776 32.7498V18.464Z"
+          stroke="white"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </G>
     </Svg>
   );
 };
