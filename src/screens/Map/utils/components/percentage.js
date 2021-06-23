@@ -9,21 +9,18 @@ export const CountryPercent = [
     contName: "China",
     affected: "Affected - 81.05k",
     recovered: "Recovered - 72,44k",
-    bell: <Bell />,
   },
   {
     percent: Images.GraphPie2,
     contName: "Italy",
     affected: "Affected - 53.5k",
     recovered: "Recovered - 6.07k",
-    bell: <Bell />,
   },
   {
     percent: Images.GraphPie3,
     contName: "USA",
     affected: "Affected - 26.892",
     recovered: "Recovered - 178",
-    bell: <Bell />,
   },
 ];
 
@@ -34,6 +31,11 @@ export const GraphPies = ({
   recovered,
   onPress,
 }) => {
+  const getIconColor = () => {
+    if (contName !== "China") {
+      return "#00C48C";
+    }
+  };
   return (
     <View style={styles.graphPies}>
       <Image source={percent} style={styles.pie1} />
@@ -43,7 +45,7 @@ export const GraphPies = ({
         <Text style={styles.affected}>{recovered}</Text>
       </View>
       <TouchableOpacity onPress={onPress}>
-        <Bell />
+        <Bell color={getIconColor()} />
       </TouchableOpacity>
     </View>
   );
