@@ -14,8 +14,9 @@ export default function Navigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode={"none"}>
-        <Stack.Screen name="mytabs" component={MyTabs} />
         <Stack.Screen name="onboarding" component={Onboarding} />
+        <Stack.Screen name="mytabs" component={MyTabs} />
+
         <Stack.Screen name="locationOff" component={LocationOff} />
         <Stack.Screen name="locOn" component={LocationOn} />
         <Stack.Screen name="locID" component={LocationID} />
