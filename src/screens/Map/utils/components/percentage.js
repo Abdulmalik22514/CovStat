@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
   pieView: {
     marginLeft: 15,
-    marginRight: 85,
+    marginRight: 75,
     width: 130,
   },
   graphPies: {
