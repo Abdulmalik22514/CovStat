@@ -11,7 +11,6 @@ import { LocationDisplay } from "./utils/locationCard";
 import { StatusHeader } from "../../components/header";
 import { ReportedSymptoms, SyptomsReport } from "./utils/components/report";
 import { Buttons } from "../../components/buttons";
-import { preventAutoHide } from "expo-splash-screen";
 
 export default function LocationID({ navigation }) {
   const [checked, setChecked] = useState("Shortness of breath");
