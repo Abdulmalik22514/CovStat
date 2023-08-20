@@ -10,7 +10,7 @@ export const Prevent = [
 
 export const Tabs = ({ title, onPress, isActive, style }) => {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
       <View style={styles.overall}>
         <Text style={[styles.title, isActive && styles.activeTitle, style]}>
           {title}

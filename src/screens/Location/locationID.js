@@ -27,7 +27,11 @@ export default function LocationID({ navigation }) {
       <StatusBar style={"dark"} />
       <StatusHeader title="Report my status" locOn />
       <View style={styles.divider} />
-      <ScrollView style={styles.graphCont} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.graphCont}
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
+      >
         <Text style={styles.opportunity}>
           <Text style={{ color: "#FF647C" }}>COVSTATS </Text>
           gives everyone the opportunity to report their symptoms anonymously
@@ -92,6 +96,7 @@ export default function LocationID({ navigation }) {
             <TouchableOpacity
               onPress={() => navigation.navigate("thanks")}
               style={styles.enableNow}
+              disabled={!checked}
             >
               <Text
                 style={{

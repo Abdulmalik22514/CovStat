@@ -15,7 +15,11 @@ export default function WorldMap({ navigation }) {
       <StatusBar style={"dark"} />
       <Header title="World Wide Map" icon={<ProfileIcon />} />
       <View style={styles.divider} />
-      <ScrollView style={styles.graphCont} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.graphCont}
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
+      >
         <View style={styles.bottomCont}>
           <View style={{ paddingHorizontal: 15 }}>
             <Text style={styles.topic}>COVID - 19 Affected Areas</Text>

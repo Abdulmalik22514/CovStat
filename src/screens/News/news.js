@@ -3,6 +3,7 @@ import React from "react";
 import {
   ImageBackground,
   ImageStore,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -16,9 +17,14 @@ export default function NewsPage() {
     <View style={styles.container}>
       <StatusBar style={"dark"} />
       <Header title="News" icon={<ProfileIcon />} leftIcon={<Menu />} />
-      {Italy.map((item, index) => {
-        return <NewsUpdate key={index} pic={item.pic} title={item.title} />;
-      })}
+      <ScrollView
+        contentContainerStyle={{ paddingBottom: 50 }}
+        showsVerticalScrollIndicator={false}
+      >
+        {Italy.map((item, index) => {
+          return <NewsUpdate key={index} pic={item.pic} title={item.title} />;
+        })}
+      </ScrollView>
     </View>
   );
 }

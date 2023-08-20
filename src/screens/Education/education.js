@@ -30,7 +30,11 @@ export default function Educate({ navigation }) {
       <StatusBar style={"dark"} />
       <Header title="COVID-19" icon={<ProfileIcon />} noIcon />
       <View style={styles.divider} />
-      <ScrollView style={styles.graphCont} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.graphCont}
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
+      >
         <Text style={styles.topic}>
           Coronavirus disease (COVID - 19) advice for the public
         </Text>

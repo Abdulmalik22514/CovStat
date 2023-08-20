@@ -18,7 +18,11 @@ export default function Covid19() {
       <StatusBar style={"dark"} />
       <Header title="COVID-19" icon={<ProfileIcon />} noIcon />
       <View style={styles.divider} />
-      <ScrollView style={styles.graphCont} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.graphCont}
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
+      >
         <View style={styles.itemCont}>
           {CaseGraphs.map((item, index) => {
             return (
